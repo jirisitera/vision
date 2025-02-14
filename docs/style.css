@@ -1,0 +1,85 @@
+body {
+  background-color: black;
+  color: white;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  --md-ref-typeface-plain: Arial, Helvetica, sans-serif;
+  --md-sys-color-on-primary: white;
+  --md-sys-color-on-primary-container: white;
+  --md-sys-color-on-surface: white;
+  --md-sys-color-on-surface-variant: white;
+  --md-outlined-select-text-field-focus-outline-color: white;
+  --md-outlined-text-field-focus-label-text-color: white;
+  --md-outlined-text-field-focus-outline-color: white;
+  --md-outlined-text-field-focus-caret-color: white;
+  --md-sys-color-primary: black;
+  --md-sys-color-primary-container: black;
+  --md-sys-color-secondary: black;
+  --md-sys-color-secondary-container: black;
+  --md-sys-color-surface: black;
+  --md-sys-color-surface-container: black;
+  --md-sys-color-outline: black;
+  --md-sys-color-outline-variant: black;
+  user-select: none;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.stars {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.keybinds {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  margin: auto;
+  display: grid;
+  width: 75%;
+  height: 75%;
+}
+
+video {
+  grid-column: 1;
+  grid-row: 1;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 30px;
+  z-index: 1;
+  opacity: 1.0;
+}
+
+.canvas {
+  grid-column: 1;
+  grid-row: 1;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 30px;
+  z-index: 2;
+}
